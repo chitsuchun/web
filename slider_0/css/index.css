@@ -6,9 +6,9 @@
 .full_x             {position: relative; width: 100%; left: 0px; top: 0px;}
 #slider             {position: relative; width: 30%; height: 0%; left: 50%; top: 50%; margin: 0% 0% 0% -15%;}
 #slider_in          {position: relative; width: 100%; height: 0%; left: 0%; top: 0%; padding-bottom: 56.25%; margin-top: -28.125%; background-color: #f2eb16;}
-#arrow_left         {position: absolute; width: 10%; height: 0%; left: 0%; top: 50%; padding-bottom: 10%; margin: -5% 0% 0% -10%; background-color: #333; color: #fff; cursor: pointer;} 
-#arrow_right        {position: absolute; width: 10%; height: 0%; right: 0%; top: 50%; padding-bottom: 10%; margin: -5% -10% 0% 0%; background-color: #333; color: #fff; cursor: pointer;} 
-
+#arrow_left         {position: absolute; width: 10%; height: 0%; left: 0%; top: 50%; padding-bottom: 10%; margin: -5% 0% 0% -10%; background-color: #333; color: #fff; /*cursor: pointer;*/} 
+#arrow_right        {position: absolute; width: 10%; height: 0%; right: 0%; top: 50%; padding-bottom: 10%; margin: -5% -10% 0% 0%; background-color: #333; color: #fff; /*cursor: pointer;*/} 
+body                {cursor: url("../images/pointer.png"), auto;}
 
 /*body{
     -webkit-touch-callout: none;
