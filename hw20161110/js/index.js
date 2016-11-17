@@ -75,8 +75,15 @@ var exist_boolean_a = true,
 console.log( typeof exist_boolean_a, typeof exist_boolean_b );
 
 var exist_function = function(){};
-console.log( typeof exist_function );
-
+console.log( typeof exist_function );// ---->動作
+    
+var lunch = 'pizza';
+//  吃             食物
+var eat = function(food){
+    console.log( 'i eat '+ food );
+}
+//   食物是 lunch
+eat(lunch); // console.log( lunch );
 
 /*
 創造 ：“宣告”
