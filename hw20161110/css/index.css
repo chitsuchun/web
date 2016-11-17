@@ -11,7 +11,8 @@
 body                {height: 100%; cursor: url(../images/pointer_02.png),auto;}
 #slider_me          {position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; overflow: hidden;}
 #slider_we          {position: absolute; width: 500%; height: 100%; left: 0px; top: 0px; margin: 0% 0% 0% -250%;}
-.bro5               {position: relative; width: 20%; height: 100%; left: 0px; top: 0px;}
+.bro5               {position: relative; width: 100%; height: 100%; left: 0px; top: 0px;}
+
 
 /*body                {cursor: crosshair;}*/
 /*body{
