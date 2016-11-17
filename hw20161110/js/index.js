@@ -106,7 +106,7 @@ eat(lunch);
 陣列 array
 布林值 boolean
 動作 function
-特殊值 null undefined
+特殊值 null/undefined
 */  
 
 
