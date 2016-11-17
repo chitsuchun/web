@@ -57,7 +57,7 @@ $(function(){
 
 
 var jerjer = 100;
-console.log(jerjer);
+console.log(      typeof jerjer          );
 // 告訴我"jerjer" 
 
 /*
