@@ -56,16 +56,33 @@ $(function(){
 
 
 
-var jerjer = 100;
-console.log(      typeof jerjer          );
-// 告訴我"jerjer" 
+var exist_num = 100;
+exist_num + 100
+console.log( typeof exist_num );
+// 告訴我"exist_num" 
 
+var exist_string = '100';
+console.log( typeof exist_string );
+
+var exist_object = {zzz: 123,xxx: 456};
+console.log( typeof exist_object );
+
+var exist_array = [1,2,3,4,{},'7'];
+console.log( typeof exist_array );
+
+var exist_boolean_a = true,
+    exist_boolean_b = false;
+console.log( typeof exist_boolean_a, typeof exist_boolean_b );
 /*
-數字
-字串
-物件
-陣列
-布林值
+創造 ：“宣告”
+東西 ：“變數”
+
+
+數字 number
+字串 string
+物件 object
+陣列 array
+布林值 boolean
 */  
 
 
