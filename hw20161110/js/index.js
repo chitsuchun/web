@@ -64,15 +64,20 @@ console.log( typeof exist_num );
 var exist_string = '100';
 console.log( typeof exist_string );
 
-var exist_object = {zzz: 123,xxx: 456};
+var exist_object = {xxx: 456,zzz: 123};
 console.log( typeof exist_object );
 
-var exist_array = [1,2,3,4,{},'7'];
+var exist_array = [2,1,3,4,{},'7'];
 console.log( typeof exist_array );
 
 var exist_boolean_a = true,
     exist_boolean_b = false;
 console.log( typeof exist_boolean_a, typeof exist_boolean_b );
+
+var exist_function = function(){};
+console.log( typeof exist_function );
+
+
 /*
 創造 ：“宣告”
 東西 ：“變數”
@@ -83,6 +88,7 @@ console.log( typeof exist_boolean_a, typeof exist_boolean_b );
 物件 object
 陣列 array
 布林值 boolean
+動作 function
 */  
 
 
