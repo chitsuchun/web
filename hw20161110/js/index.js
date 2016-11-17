@@ -56,8 +56,19 @@ $(function(){
 
 
 
-var jerjer;
+var jerjer = 100;
 console.log(jerjer);
+// 告訴我"jerjer" 
+
+/*
+數字
+字串
+物件
+陣列
+布林值
+*/  
+
+
 
 
 
