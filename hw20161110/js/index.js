@@ -62,7 +62,7 @@ console.log( typeof exist_num );
 // 告訴我"exist_num" 
 
 var exist_string = '100';
-console.log( typeof exist_string );
+// console.log( typeof exist_string );
 
 var exist_object = {xxx: 456,zzz: 123};
 console.log( typeof exist_object );
@@ -81,6 +81,7 @@ var lunch = 'pizza';
 //  吃             食物
 var eat = function(food){
     console.log( 'i eat '+ food );
+    alert( 'i eat '+ food );
 }
 //   食物是 lunch
 eat(lunch); // console.log( lunch );
