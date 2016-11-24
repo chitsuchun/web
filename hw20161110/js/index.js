@@ -110,7 +110,7 @@ eat(lunch);
 */  
 
 
-
+console.log( document );
 
 
 
