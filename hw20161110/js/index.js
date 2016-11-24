@@ -110,8 +110,41 @@ eat(lunch);
 */  
 
 
-console.log( document.getElementById('slider_1') );
+console.log( document.getElementById('slider_1').getAttribute('id') );
+            // labu  .    history        ()     .   laugh      ()
+function lol(){
+    return 'kelly';
+}
+function wowow(){
+    console.log('wowow');
+    return '123';
+}
+var human = {
+        laugh: lol
+    },
+    dog = {
+        wow: wowow
+    },
+    labu = {
+        wow: wowow,
+        master: 'peter',
+        history: function find_master(){
+                     return human
+                 } 
+    }
+/*
+    wowow();
+    
 
+    labu.wow()
+
+    labu.history() = find_master()
+
+    labu.history().laugh()
+    
+
+    labu.master +'123'
+*/
 
 
 
