@@ -49,23 +49,46 @@
 //         }
 //     );
 // });
-var handler= function(word){
-    alert(word); 
+var handler = function(dog){
+    alert(dog); 
 }
-handler('fuck')
+function handler (dog){
+    // alert(dog); 
+    // dog                              ();
+    // function(){console.log(100)}     ();
+}
+// handler(   function(){console.log(100)}     )
 // $(  handler  );
 // $( function(){     alert('ok');  });
 
+
+
+// $( document ).ready( function(){   } );
 $(function(){     
     $.Body = $('body');
     // var body = document.queryselector('body');
     $.Window = $(window);
     // $.loading = $('#loading');
-    $.loading = $.Body.find('#loading');
-    // $.Window.load ----> 某個動作  $.window = {  load: function(){}  }  某個動作+() ---->執行   
-    $.Window.load(function(){
-        $.loading.fadeOut(1000);
-    });
+    $.loading = $.Body.find ('#loading');
+    // $.Body.find ----> 某個動作  $.Body= {  find: function(){}  }  某個動作+() ---->執行  
+    // $.Window.load ----> 某個動作  $.window = {  load: function(  xxx   ){  xxx()   }  }  某個動作+() ---->執行   
+    $.Window.load(
+
+
+        function(){
+            $.loading.fadeOut(1000);
+        }   
+
+
+                                   //一整個參數-------> xxx
+
+
+
+
+
+
+
+    );
     
     // console.log($.loading)
     // console.log($.loading)
@@ -89,7 +112,7 @@ $(function(){
 });
 
 
-// $( document ).ready( function(){   } );
+
 
 
 
