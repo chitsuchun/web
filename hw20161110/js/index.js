@@ -113,7 +113,7 @@ eat(lunch);
 
 // document.getElementById('slider_1') = $('#slider').get(0)
 
-console.log($('#slider'));
+console.log($('#slider').attr('id'));
 
 // <div id='slider'></div>     
 
