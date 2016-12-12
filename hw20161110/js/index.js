@@ -111,8 +111,14 @@ eat(lunch);
 
 
 
+// document.getElementById('slider_1') = $('#slider').get(0)
 
-console.log(jQuery);
+console.log($('#slider'));
+
+// <div id='slider'></div>     
+
+
+
 
 console.log( document.getElementById('slider_1').getAttribute('id') );
             // labu  .    history        ()     .   laugh      ()
