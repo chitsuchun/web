@@ -63,7 +63,7 @@ $(function(){
     $.loading = $.Body.find('#loading');
     // $.Window.load ----> 某個動作  $.window = {  load: function(){}  }  某個動作+() ---->執行   
     $.Window.load(function(){
-        $.loading.fadeOut();
+        $.loading.fadeOut(1000);
     });
     
     // console.log($.loading)
