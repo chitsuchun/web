@@ -49,13 +49,46 @@
 //         }
 //     );
 // });
+var handler = function(word){
+    alert(word); 
+}
+// $(  handler  );
+// $( function(){     alert('ok');  });
 
-$(function(){
-    alert('ok');
+$(function(){     
+    $.Body = $('body');
+    // var body = document.queryselector('body');
+    $.Window = $(window);
+    // $.loading = $('#loading');
+    $.loading = $.Body.find('#loading');
+    // $.Window.load ----> 某個動作  $.window = {  load: function(){}  }  某個動作+() ---->執行   
+    $.Window.load(function(){
+        $.loading.fadeOut();
+    });
+    
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+    // console.log($.loading)
+
 });
 
 
-// $( document ).ready( function(){   } )
+// $( document ).ready( function(){   } );
 
 
 
