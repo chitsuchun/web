@@ -77,7 +77,16 @@ $(function(){
 
         function(){
             $.loading.fadeOut(1000);
+
+            //slider
+
+
+
+
         }   
+
+
+        // $.loading.fadeOut
 
 
                                    //一整個參數-------> xxx
