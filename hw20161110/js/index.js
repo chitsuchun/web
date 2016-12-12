@@ -49,9 +49,10 @@
 //         }
 //     );
 // });
-var handler = function(word){
+var handler= function(word){
     alert(word); 
 }
+handler('fuck')
 // $(  handler  );
 // $( function(){     alert('ok');  });
 
