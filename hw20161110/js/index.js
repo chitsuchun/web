@@ -110,6 +110,10 @@ eat(lunch);
 */  
 
 
+
+
+console.log(jQuery);
+
 console.log( document.getElementById('slider_1').getAttribute('id') );
             // labu  .    history        ()     .   laugh      ()
 function lol(){
