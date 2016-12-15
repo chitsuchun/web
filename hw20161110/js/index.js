@@ -104,7 +104,10 @@ $(function(){
             );
             $.arrow_left.hover(
                 function(){
-                    console.log('hover');
+                    console.log('hover in');
+                },
+                function(){
+                    console.log('hover out');
                 }
             );
 
