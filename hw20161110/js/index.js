@@ -77,6 +77,7 @@ $(function(){
 
         function(){
             $.loading.fadeOut(1000);
+            $.box = $.Body.find('#box');
 
             //slider
 
@@ -194,6 +195,8 @@ console.log( document.getElementById('slider_1').getAttribute('id') );
 function lol(){
     return 'kelly';
 }
+
+// lol() = 'kelly'
 function wowow(){
     console.log('wowow');
     return '123';
