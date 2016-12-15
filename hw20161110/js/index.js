@@ -70,21 +70,56 @@ $(function(){
     $.Window = $(window);
     // $.loading = $('#loading');
     $.loading = $.Body.find ('#loading');
+    $.arrow_left = $.Body.find ('#arrow_left');
+    $.arrow_right = $.Body.find ('#arrow_right');
     // $.Body.find ----> 某個動作  $.Body= {  find: function(){}  }  某個動作+() ---->執行  
-    // $.Window.load ----> 某個動作  $.window = {  load: function(  xxx   ){  xxx()   }  }  某個動作+() ---->執行   
+    // $.Window.load ----> 某個動作  $.window = {  load: function(  xxx   ){  xxx()   }  }  某個動作+() ---->執行  
+
+
+
+
+    //目的：發生了某件事(事件)  ------->   做某個動作
+
+
+    //偵聽 到  某個事件  的  發生  ------->   做某個動作
+
+
+
+
+
     $.Window.load(
 
 
-        function(){
+        function (){
             $.loading.fadeOut(1000);
-            $.box = $.Body.find('#box');
+            // $.box = $.Body.find('#box');
 
             //slider
 
+            //      偵聽()
+            $.arrow_left.click(
+                function(){
+                    alert('hahahahah');
+                }
+            );
 
 
 
-        }   
+        } 
+
+
+        /*function (){
+
+            function (){
+                $.loading.fadeOut(1000);
+                $.box = $.Body.find('#box');
+
+
+
+            }()
+
+        } */ 
+
 
 
         // $.loading.fadeOut
