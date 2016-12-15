@@ -110,7 +110,7 @@ $(function(){
                     console.log('hover out');
                 }
             );
-            $.Body.scroll(
+            $.Window.scroll(
                 function(){
                     console.log('scroll');
                 }
