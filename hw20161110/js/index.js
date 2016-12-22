@@ -98,13 +98,18 @@ $(function(){
             //slider
 
             //      偵聽()
+            var page = 2;
             $.arrow_left.click(
                 function(){
                     console.log('left');
                     // $.slider_we 往右跑
+                    page = page -1;
                     $.slider_we.css(
                         {
-                            'margin':'0% 0% 0% -100%'
+                            // 'margin': '0% 0% 0% -100%'
+                            // 'margin': '0% 0% 0% '+'-100'+'%'
+                            // 'margin': '0% 0% 0% '+(-100)+'%' 型別轉換
+                            'margin': '0% 0% 0% '+(-100*page)+'%'
                         }
                     );
 
