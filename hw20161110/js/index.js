@@ -103,7 +103,14 @@ $(function(){
                 function(){
                     console.log('left');
                     // $.slider_we 往右跑
-                    page = page -1;
+
+                    
+                    if(  page == 0 ){
+                        page = 5;
+                    }
+
+                    page = page - 1;                    
+                    console.log(page);
                     $.slider_we.css(
                         {
                             // 'margin': '0% 0% 0% -100%'
@@ -112,6 +119,14 @@ $(function(){
                             'margin': '0% 0% 0% '+(-100*page)+'%'
                         }
                     );
+                    // 如果 熱  吃冰
+                    // 如果 冷  吃湯圓
+                    // if(冷){
+                    //     吃湯圓
+                    // }
+
+                    // console.log('cold');
+
 
 
 
