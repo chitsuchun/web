@@ -72,6 +72,7 @@ $(function(){
     $.loading = $.Body.find ('#loading');
     $.arrow_left = $.Body.find ('#arrow_left');
     $.arrow_right = $.Body.find ('#arrow_right');
+    $.slider_we = $.Body.find ('#slider_we');
     // $.Body.find ----> 某個動作  $.Body= {  find: function(){}  }  某個動作+() ---->執行  
     // $.Window.load ----> 某個動作  $.window = {  load: function(  xxx   ){  xxx()   }  }  某個動作+() ---->執行  
 
@@ -100,6 +101,21 @@ $(function(){
             $.arrow_left.click(
                 function(){
                     console.log('left');
+                    // $.slider_we 往右跑
+                    $.slider_we.css(
+                        {
+                            'margin':'0% 0% 0% -100%'
+                        }
+                    );
+
+
+
+
+
+
+
+
+
                 }
             );
             $.arrow_right.click(
