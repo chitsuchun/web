@@ -99,7 +99,12 @@ $(function(){
             //      偵聽()
             $.arrow_left.click(
                 function(){
-                    console.log('click');
+                    console.log('left');
+                }
+            );
+            $.arrow_right.click(
+                function(){
+                    console.log('right');
                 }
             );
             $.arrow_left.hover(
