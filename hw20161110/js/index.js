@@ -105,12 +105,18 @@ $(function(){
                     // $.slider_we 往右跑
 
                     
-                    if(  page == 0 ){
+                    if( page == 0 ){
                         page = 5;
-                    }
+                    } /*else if(   ){
+
+                    } else {
+
+                    }*/
+
+                    //page = (page==0)?5:page;    // A?B:C  A是true ---> 變成 B , A是false  ---> 變成 C 
 
                     page = page - 1;                    
-                    console.log(page);
+                    // console.log(page);
                     $.slider_we.css(
                         {
                             // 'margin': '0% 0% 0% -100%'
@@ -126,6 +132,13 @@ $(function(){
                     // }
 
                     // console.log('cold');
+                    
+            
+
+
+
+
+
 
 
 
@@ -141,6 +154,26 @@ $(function(){
             $.arrow_right.click(
                 function(){
                     console.log('right');
+
+
+                    if( page == 4 ){
+                        page = 0;
+                    } else {
+                        page = page + 1; 
+                    } 
+
+                    // if( page == 4 ){
+                    //     page = -1;
+                    // }
+                    // page = page + 1;                    
+                    
+                    $.slider_we.css(
+                        {
+                            'margin': '0% 0% 0% '+(-100*page)+'%'
+                        }
+                    );
+                
+
                 }
             );
             $.arrow_left.hover(
@@ -180,6 +213,11 @@ $(function(){
 
 
                                    //一整個參數-------> xxx
+        
+
+
+
+
 
 
 
