@@ -149,35 +149,18 @@ $(function(){
                     // console.log('cold');
                 }
             );
+            function move_right(){
+                console.log('right');
+                if( page == 4 ){
+                    page = 0;
+                } else {
+                    page = page + 1; 
+                } 
+                move_it(page);
+            }
             $.arrow_right.click(
                 function(){
-                    console.log('right');
-
-
-                    if( page == 4 ){
-                        page = 0;
-                    } else {
-                        page = page + 1; 
-                    } 
-
-                    // if( page == 4 ){
-                    //     page = -1;
-                    // }
-                    // page = page + 1;        
-
-
-                    // $.slider_we.css(
-                    //     {
-                    //         // 'margin': '0% 0% 0% -100%'
-                    //         // 'margin': '0% 0% 0% '+'-100'+'%'
-                    //         // 'margin': '0% 0% 0% '+(-100)+'%' 型別轉換
-                    //         'margin': '0% 0% 0% '+(-100*page)+'%'
-                    //     }
-                    // );           
-                    
-                    move_it(page);
-                
-
+                    move_right();
                 }
             );
             $.arrow_left.hover(
@@ -203,7 +186,7 @@ $(function(){
 
             var count_forever_j = setInterval(
                 function(){
-
+                    move_right();
                 },
                 1000
             );
