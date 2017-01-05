@@ -175,7 +175,7 @@ $(function(){
                     //     }
                     // );           
                     
-                    move_it(move_target);
+                    move_it(page);
                 
 
                 }
@@ -194,16 +194,16 @@ $(function(){
                 }
             );
 
-            var count_once_j = setTimeout(
-                function(){
-                    console.log(123);
-                },
-                1000
-            );
+            // var count_once_j = setTimeout(
+            //     function(){
+            //         console.log(123);
+            //     },
+            //     1000
+            // );
 
             var count_forever_j = setInterval(
                 function(){
-                    console.log(123);
+
                 },
                 1000
             );
