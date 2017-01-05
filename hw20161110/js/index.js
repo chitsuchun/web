@@ -97,6 +97,18 @@ $(function(){
 
             //slider
 
+
+
+
+
+            function move_it(move_target){
+                $.slider_we.css(
+                    {
+                        'margin': '0% 0% 0% '+(-100*move_target)+'%'
+                    }
+                );
+            }
+
             //      偵聽()
             var page = 2;
             $.arrow_left.click(
@@ -117,14 +129,17 @@ $(function(){
 
                     page = page - 1;                    
                     // console.log(page);
-                    $.slider_we.css(
-                        {
-                            // 'margin': '0% 0% 0% -100%'
-                            // 'margin': '0% 0% 0% '+'-100'+'%'
-                            // 'margin': '0% 0% 0% '+(-100)+'%' 型別轉換
-                            'margin': '0% 0% 0% '+(-100*page)+'%'
-                        }
-                    );
+                    // $.slider_we.css(
+                    //     {
+                    //         // 'margin': '0% 0% 0% -100%'
+                    //         // 'margin': '0% 0% 0% '+'-100'+'%'
+                    //         // 'margin': '0% 0% 0% '+(-100)+'%' 型別轉換
+                    //         'margin': '0% 0% 0% '+(-100*page)+'%'
+                    //     }
+                    // );
+
+                    move_it(page);
+
                     // 如果 熱  吃冰
                     // 如果 冷  吃湯圓
                     // if(冷){
@@ -132,23 +147,6 @@ $(function(){
                     // }
 
                     // console.log('cold');
-                    
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 }
             );
             $.arrow_right.click(
@@ -165,13 +163,19 @@ $(function(){
                     // if( page == 4 ){
                     //     page = -1;
                     // }
-                    // page = page + 1;                    
+                    // page = page + 1;        
+
+
+                    // $.slider_we.css(
+                    //     {
+                    //         // 'margin': '0% 0% 0% -100%'
+                    //         // 'margin': '0% 0% 0% '+'-100'+'%'
+                    //         // 'margin': '0% 0% 0% '+(-100)+'%' 型別轉換
+                    //         'margin': '0% 0% 0% '+(-100*page)+'%'
+                    //     }
+                    // );           
                     
-                    $.slider_we.css(
-                        {
-                            'margin': '0% 0% 0% '+(-100*page)+'%'
-                        }
-                    );
+                    move_it(move_target);
                 
 
                 }
@@ -189,6 +193,22 @@ $(function(){
                     console.log('scroll');
                 }
             );
+
+            var count_once_j = window.setTimeout(
+                function(){
+                    console.log(123);
+                },
+                1000
+            );
+
+
+            // window = {
+            //     setTimeout:function(a,b){}
+            // }
+
+
+
+
 
 
 
